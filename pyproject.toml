@@ -2,7 +2,7 @@
 name = "module2"
 version = "0.1.0"
 description = ""
-authors = ["Tomer <tsherf10@gmail.com>"]
+authors = ["Tomer"]
 readme = "README.md"
 package-mode = false
 
