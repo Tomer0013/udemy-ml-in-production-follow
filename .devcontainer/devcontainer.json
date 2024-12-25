@@ -1,0 +1,31 @@
+{
+    "name": "udemy-ml-in-production-from-data-scientist-to-ml-engineer-container",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": "."
+    },
+    "workspaceFolder": "/workspace",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "ms-python.pylint",
+                "ms-python.debugpy",
+                "ms-python.flake8",
+                "ms-python.black-formatter",
+                "ms-vscode.makefile-tools",
+                "ms-toolsai.datawrangler",
+                "ms-azuretools.vscode-docker",
+                "mechatroner.rainbow-csv"
+            ],
+            "settings": {
+                "python.defaultInterpreterPath": "/usr/local/bin/python"
+            }
+        }
+    },
+    "mounts": [
+        "source=${localWorkspaceFolder},target=/workspace,type=bind"
+    ],
+    "remoteUser": "root"
+}

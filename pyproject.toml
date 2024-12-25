@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "module2"
+version = "0.1.0"
+description = ""
+authors = ["Tomer <tsherf10@gmail.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+scikit-learn = "^1.6.0"
+pandas = "^2.2.3"
+pydantic-settings = "^2.7.0"
+loguru = "^0.7.3"
+sqlalchemy = "^2.0.36"
+flake8 = "^7.1.1"
+isort = "^5.13.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
