@@ -1,7 +1,7 @@
 PHONY: run install check clean runner
 .DEFAULT_GOAL=runner
 
-run:
+run: install
 	cd src; poetry run python runner.py
 
 install: pyproject.toml
@@ -13,5 +13,5 @@ check:
 clean:
 	rm -rf $$(find . -type d -name __pycache__)
 
-runner: install check run clean
+runner: check run clean
 
